@@ -32,7 +32,7 @@ export default defineConfig((/* ctx */) => {
 
        // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
     build: {
-      publicPath: '/winner-picker/',
+      publicPath: '/',
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       target: {
