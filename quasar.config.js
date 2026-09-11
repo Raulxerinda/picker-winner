@@ -30,20 +30,21 @@ export default defineConfig((/* ctx */) => {
       'material-icons', // optional, you are not bound to it
     ],
 
-    // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
+       // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
     build: {
+      publicPath: '/winner-picker/',
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
+
       target: {
-        // browser: 'baseline-widely-available',
-        // node: 'node22'
+        browser: ['es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1'],
+        node: 'node20'
       },
 
       // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filename-based-routing
       // filenameBasedRouting: true,
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
 
-      // publicPath: '/',
       // define: {},
       // defineEnv: {}
       // ignorePublicFolder: true,
